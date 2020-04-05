@@ -6,6 +6,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: right;
-  background-color: violet;
+  background-color: white;
   border: 4px solid blue;
 }

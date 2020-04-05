@@ -20,14 +20,14 @@ function SideBar(props) {
       },
       Skills: () => {
         console.log(props);
-      }
+      },
     });
   }, []);
 
   return (
     <div className="sidebar">
       <div className="sidebar-holder">
-        {Object.keys(options).map(key => {
+        {Object.keys(options).map((key) => {
           return (
             <div key={key} className="sidebar-items">
               {key}
