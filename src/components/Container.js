@@ -6,17 +6,16 @@ import "./Container.css";
 function Container(props) {
   const myProps = useSpring({
     from: {
-      num: 30
+      num: 30,
     },
-    num: 0
+    num: 0,
   });
   return (
     <animated.div
       style={{
         transform: myProps.num.interpolate(
-          angle =>
-            `perspective(400px) translate(-50%,-50%) rotateY(${angle}deg)`
-        )
+          (angle) => `perspective(400px) translateY(-50%) rotateY(${angle}deg)`
+        ),
       }}
       className="container"
     ></animated.div>
