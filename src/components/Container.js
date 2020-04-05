@@ -14,7 +14,7 @@ function Container(props) {
     <animated.div
       style={{
         transform: myProps.num.interpolate(
-          (angle) => `perspective(400px) translateY(-50%) rotateY(${angle}deg)`
+          (angle) => `perspective(400px) rotateY(${angle}deg)`
         ),
       }}
       className="container"
